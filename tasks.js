@@ -72,7 +72,15 @@ function unknownCommand(c){
 function hello(a){
   console.log(''+a.trim()+'!')
 }
-
+/**
+ * list
+ *
+ * @param  {string} c the text received
+ * @returns {void}
+ */
+function list(){
+  console.log(''+trim()+'!')
+}
 
 /**
  * displays help

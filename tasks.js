@@ -35,6 +35,8 @@ function startApp(name){
  * @returns {void}
  */
 function onDataReceived(text) {
+  let namee = text.split(" ");
+
   start=text.startsWith("hello");
   if (text === 'quit\n' || text === 'exit\n') {
     quit();
@@ -47,8 +49,12 @@ function onDataReceived(text) {
   }
 else if (text === "list\n") {
   list();
-}
-  else{
+}else if (namee[0] === "add") {
+  add(text);
+} else if (text === "add\n") {
+  console.log("error");
+} 
+else{
     unknownCommand(text);
   }
 }
@@ -74,6 +80,17 @@ function list() {
     console.log(`${1 + i} - [${done[i]}] ${liss[i]}`);
     i++;
   }
+}
+
+function add(x) {
+  let q = x.split(" ");
+  q.shift();
+  let j = q.toString();
+  j = j.replace(/\,/g, " ");
+  j = j.replace("\n", "");
+  liss.push(j);
+  done.push(" ");
+  list();
 }
 
 /**

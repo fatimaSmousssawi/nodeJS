@@ -174,6 +174,9 @@ function help(){
   console.log("type 'list' to display the list");
   console.log("type 'add' to add tasks");
   console.log("type 'remove x' to remove 'x' tasks");
+  console.log("type 'edit x' to edit 'x' tasks");
+  console.log("type 'check x' to checking tasks 'x'");
+  console.log("type 'uncheck' to uncheck 'x' tasks");
 }
 
 

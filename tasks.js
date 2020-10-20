@@ -45,6 +45,9 @@ function onDataReceived(text) {
   }else if(text === 'help\n'){
     help();
   }
+else if (text === "list\n") {
+  list();
+}
   else{
     unknownCommand(text);
   }
@@ -62,6 +65,16 @@ function unknownCommand(c){
   console.log('unknown command: "'+c.trim()+'"')
 }
 
+let liss = ["hanging out", "watch Tv", "eat with friends"];
+let done = ["✓", "✓", " "];
+
+function list() {
+  let i = 0;
+  while (liss[i] != undefined) {
+    console.log(`${1 + i} - [${done[i]}] ${liss[i]}`);
+    i++;
+  }
+}
 
 /**
  * Says hello
@@ -75,13 +88,9 @@ function hello(a){
 /**
  * list
  *
- * @param  {string} c the text received
+ * 
  * @returns {void}
  */
-function list(){
-  console.log(''+trim()+'!')
-}
-
 /**
  * displays help
  *

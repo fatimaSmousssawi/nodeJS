@@ -129,7 +129,9 @@ function hello(a){
  */
 function help(){
   console.log('entering "help" displays the role of each command here : \n entering "hello " displays "hello!" \n  entering "hello + anything else " displays "hello + what you have typed !"\n entering "quit or exit" displays "Quitting now, goodbye!" \n ')
-  
+  console.log("type 'list' to display the list");
+  console.log("type 'add' to add tasks");
+  console.log("type 'remove x' to remove 'x' tasks");
 }
 
 

@@ -1,4 +1,5 @@
 
+
 /**
  * Starts the application
  * This is the function that is run when the app starts
@@ -79,4 +80,4 @@ function quit(){
 }
 
 // The following line starts the application
-startApp("Jad Sarout")
+startApp("Fatima Moussawii")

@@ -80,7 +80,7 @@ function hello(a){
  * @returns {void}
  */
 function help(){
-  console.log('entering "help" displays the role of each command here : \n entering "hello" displays "hello!" \n entering "quit or exit" displays "Quitting now, goodbye!" \n ')
+  console.log('entering "help" displays the role of each command here : \n entering "hello " displays "hello!" \n  entering "hello + anything else " displays "hello + what you have typed !"\n entering "quit or exit" displays "Quitting now, goodbye!" \n ')
 }
 
 

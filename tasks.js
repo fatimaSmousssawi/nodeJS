@@ -82,12 +82,12 @@ function unknownCommand(c){
 }
 
 let liss = ["hanging out", "watch Tv", "eat with friends"];
-let done = ["✓", "✓", " "];
+let donee = ["✓", "✓", " "];
 
 function list() {
   let i = 0;
   while (liss[i] != undefined) {
-    console.log(`${1 + i} - [${done[i]}] ${liss[i]}`);
+    console.log(`${1 + i} - [${donee[i]}] ${liss[i]}`);
     i++;
   }
 }
@@ -99,14 +99,14 @@ function add(x) {
   j = j.replace(/\,/g, " ");
   j = j.replace("\n", "");
   liss.push(j);
-  done.push(" ");
+  donee.push(" ");
   list();
 }
 
 function remove(x) {
   if (x <= liss.length && x > 0) {
     liss.splice(x - 1, 1);
-    done.splice(x - 1, 1);
+    donee.splice(x - 1, 1);
     list();
   } else console.log("number doesn't exist");
 }

@@ -64,6 +64,15 @@ else if (text === "list\n") {
 } else if (namee[0] === "edit") {
   edit(text);
 }
+else if (text === "check\n") {
+  console.log("error");
+} else if (namee[0] === "check") {
+  check(namee[1]);
+} else if (text === "uncheck\n") {
+  console.log("error");
+} else if (namee[0] === "uncheck") {
+  uncheck(namee[1]);
+} 
 else{
     unknownCommand(text);
   }
@@ -132,7 +141,14 @@ function edit(x) {
     list();
   } else console.log("number does not exist");
 }
-
+function check(x) {
+  donee[x - 1] = "✓";
+  list();
+}
+function uncheck(x) {
+  donee[x - 1] = " ";
+  list();
+}
 /**
  * Says hello
  *

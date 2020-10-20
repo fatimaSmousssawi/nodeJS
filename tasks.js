@@ -53,7 +53,13 @@ else if (text === "list\n") {
   add(text);
 } else if (text === "add\n") {
   console.log("error");
-} 
+} else if (namee[0] === "remove") {
+  remove(namee[1]);
+} else if (text === "remove\n") {
+  liss.pop();
+  done.pop();
+  list();
+}
 else{
     unknownCommand(text);
   }
@@ -91,6 +97,14 @@ function add(x) {
   liss.push(j);
   done.push(" ");
   list();
+}
+
+function remove(x) {
+  if (x <= liss.length && x > 0) {
+    liss.splice(x - 1, 1);
+    done.splice(x - 1, 1);
+    list();
+  } else console.log("number does not exist");
 }
 
 /**

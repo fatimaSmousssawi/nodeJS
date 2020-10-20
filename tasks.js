@@ -82,7 +82,7 @@ function help(){
 
 
 /**
- * Exits the application
+ * Exits the application.
  *
  * @returns {void}
  */

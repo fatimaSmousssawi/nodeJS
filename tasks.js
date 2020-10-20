@@ -104,7 +104,7 @@ function remove(x) {
     liss.splice(x - 1, 1);
     done.splice(x - 1, 1);
     list();
-  } else console.log("number does not exist");
+  } else console.log("number doesn't exist");
 }
 
 /**
